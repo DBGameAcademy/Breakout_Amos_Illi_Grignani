@@ -147,3 +147,4 @@ MonoBehaviour:
   Hits: 1
   ScoreValue: 100
   OnBreakAudio: {fileID: 8300000, guid: 390ec1bf0ff5890429c75c74927a784b, type: 3}
+  RespawnDelay: 2

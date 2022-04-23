@@ -11,15 +11,5 @@ public class Paddle : MonoBehaviour
     {
         transform.Translate(_direction * MoveSpeed * Time.deltaTime);
     }
-    void Update()
-    {
-       if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            transform.Translate(Vector2.left * MoveSpeed * Time.deltaTime);
-        }
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            transform.Translate(Vector2.right * MoveSpeed * Time.deltaTime);
-        }
-    }
+    
 }

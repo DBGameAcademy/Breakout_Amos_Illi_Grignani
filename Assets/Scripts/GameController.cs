@@ -17,6 +17,8 @@ public class GameController : MonoBehaviour
     public bool IsPlaying { get { return isPlaying; } }
     private bool isPaused = false;
     public bool IsPaused { get { return isPaused; } }
+    
+
 
     public void Start()
     {
@@ -25,17 +27,6 @@ public class GameController : MonoBehaviour
         PauseGame();
     }
 
-    private void Update()
-    {
-        if (!isPaused && Input.GetKeyDown(KeyCode.Escape))
-        {
-            PauseGame();
-        }
-        else if (isPaused && Input.anyKeyDown)
-        {
-            UnpauseGame();
-        }
-    }
 
     public void AdScore(int _value)
     {
